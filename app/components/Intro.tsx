@@ -8,7 +8,10 @@ import { FaGithubSquare } from "react-icons/fa";
 
 const Intro = () => {
   return (
-    <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
+    <section
+      className="mb-28 max-w-[50rem] text-center 
+    sm:mb-0"
+    >
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -47,7 +50,8 @@ const Intro = () => {
       </div>
 
       <motion.p
-        className="mb-10 mt-4 px-4 text-2xl font-medium leading-[1.5] sm:text-4xl"
+        className="mb-10 mt-4 px-4 text-2xl font-medium leading-[1.5] 
+        sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
@@ -58,7 +62,8 @@ const Intro = () => {
       </motion.p>
 
       <motion.div
-        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-xl font-medium"
+        className="flex flex-col items-center justify-center gap-2 px-4 text-xl font-medium
+        sm:flex-row"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1 }}
