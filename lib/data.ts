@@ -1,4 +1,4 @@
-import mountain from "@/public/mountain.jpg";
+import building from "@/public/building.jpg";
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
@@ -50,15 +50,31 @@ export const experiencesData = [
 export const projectsData = [
   {
     title: "Project Title 1",
-    description: "Project Description 1",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. At debitis non sit, dolores sapiente minus dignissimos repellendus excepturi doloribus cum?",
     tags: ["Tag 1", "Tag 2", "Tag 3"],
-    imageUrl: mountain,
+    imageUrl: building,
   },
   {
     title: "Project Title 2",
-    description: "Project Description 2",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. At debitis non sit, dolores sapiente minus dignissimos repellendus excepturi doloribus cum?",
     tags: ["Tag 1", "Tag 2", "Tag 3"],
-    imageUrl: mountain,
+    imageUrl: building,
+  },
+  {
+    title: "Project Title 3",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. At debitis non sit, dolores sapiente minus dignissimos repellendus excepturi doloribus cum?",
+    tags: ["Tag 1", "Tag 2", "Tag 3"],
+    imageUrl: building,
+  },
+  {
+    title: "Project Title 4",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. At debitis non sit, dolores sapiente minus dignissimos repellendus excepturi doloribus cum?",
+    tags: ["Tag 1", "Tag 2", "Tag 3"],
+    imageUrl: building,
   },
 ] as const;
 

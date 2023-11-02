@@ -5,6 +5,7 @@ import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import AvatarPic from "@/public/avatar.png";
 
 const Intro = () => {
   return (
@@ -23,10 +24,10 @@ const Intro = () => {
             }}
           >
             <Image
-              src={"/avatar.png"}
+              src={AvatarPic}
               alt="Dustin portrait"
-              width="192"
-              height="192"
+              // width="192"
+              // height="192"
               quality="95"
               priority={true}
               className="h-24 w-24 object-cover rounded-full border-[0.35rem] border-white shadow-xl"
