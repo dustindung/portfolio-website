@@ -1,9 +1,17 @@
-import React from "react";
+"use client";
+import { useSectionInView } from "@/lib/hooks";
 import SectionHeading from "./SectionHeading";
 
 const About = () => {
+  const { ref } = useSectionInView("About");
+
   return (
-    <section className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40">
+    <section
+      ref={ref}
+      id="about"
+      className="mb-28 max-w-[45rem] text-center leading-8 scroll-mt-28
+    sm:mb-40"
+    >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
         Welcome to <span className="underline">my portfolio website!</span> I’m
