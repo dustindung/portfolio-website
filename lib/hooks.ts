@@ -14,5 +14,5 @@ export const useSectionInView = (section: Section, threshold = 0.8) => {
       setActiveSection(section);
   }, [inView]);
 
-  return { ref };
+  return { ref, inView };
 };

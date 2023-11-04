@@ -34,14 +34,16 @@ export const experiencesData = [
   {
     title: "Title 1",
     location: "Location 1",
-    description: "Description 1",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, obcaecati! Nam totam tenetur reiciendis quisquam! Error at distinctio ducimus qui.",
     icon: React.createElement(LuGraduationCap),
     date: "Date 1",
   },
   {
     title: "Title 2",
     location: "Location 2",
-    description: "Description 2",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, obcaecati! Nam totam tenetur reiciendis quisquam! Error at distinctio ducimus qui.",
     icon: React.createElement(CgWorkAlt),
     date: "Date 2",
   },
