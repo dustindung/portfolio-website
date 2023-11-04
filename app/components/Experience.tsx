@@ -9,11 +9,15 @@ import "react-vertical-timeline-component/style.min.css";
 import SectionHeading from "./SectionHeading";
 
 const Experience = () => {
-  //React-Vertical-Timeline-Component only works on Deploy
-  const { inView } = useSectionInView("Experience");
+  const { ref, inView } = useSectionInView("Experience");
 
   return (
-    <section id="experience">
+    <section
+      id="experience"
+      ref={ref}
+      className="scroll-mt-28 mb-28
+    sm:mb-40"
+    >
       <SectionHeading>My experience</SectionHeading>
       <VerticalTimeline lineColor="">
         {experiencesData.map((experience) => (
