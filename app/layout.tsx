@@ -2,9 +2,10 @@ import ActiveSectionProvider from "@/context/ActiveSectionContext";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Background from "./Background";
-import Header from "./components/Header";
-import "./globals.css";
 import Footer from "./components/Footer";
+import Header from "./components/Header";
+import ThemeSwitch from "./components/ThemeSwitch";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +23,8 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body
         className={`${inter.className} relative bg-gray-100 text-gray-950 pt-28 
-        sm:pt-36`}
+        sm:pt-36 
+        dark:bg-[#111827] dark:text-gray-50 dark:text-opacity-90`}
       >
         <ActiveSectionProvider>
           <Background />
@@ -30,6 +32,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </ActiveSectionProvider>
+        <ThemeSwitch />
       </body>
     </html>
   );
