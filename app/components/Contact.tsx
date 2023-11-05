@@ -43,10 +43,8 @@ const Contact = () => {
 
           if (error) {
             toast.error(error);
-            console.log(error);
             return;
           }
-
           toast.success("Email sent successfully!");
         }}
       >

@@ -28,7 +28,6 @@ export const sendEmail = async (formData: FormData) => {
       text: message,
     });
   } catch (error: any) {
-    console.log(error);
     return {
       error: getErrorMessage(error),
     };
