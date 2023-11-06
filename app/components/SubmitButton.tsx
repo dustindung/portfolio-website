@@ -11,7 +11,8 @@ const SubmitButton = () => {
       className="group flex items-center justify-center gap-2 h-10 w-32 bg-gray-900 text-white rounded-full outline-none transition-all
         focus:scale-110 
         hover:scale-110 hover:bg-gray-950
-        active:scale-105"
+        active:scale-105
+        dark:bg-white/10"
       disabled={pending}
     >
       {pending ? (

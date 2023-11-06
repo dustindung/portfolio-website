@@ -13,7 +13,7 @@ const Background = () => {
         lg:left-[-28rem] 
         xl:left-[-15rem] 
         2xl:left-[-5rem]
-        dark:bg-[#676394]/50 "
+        dark:bg-[#676394]/50"
       ></div>
     </>
   );

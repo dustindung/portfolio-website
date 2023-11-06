@@ -24,7 +24,8 @@ const Project = ({ title, description, tags, imageUrl }: ProjectProps) => {
       className="group relative bg-gray-200 max-w-[42rem] rounded-lg border border-black/5 overflow-hidden mb-3
     sm:pr-8 sm:h-80 sm:mb-8
     last:mb-0
-    hover:bg-gray-300/75 transition"
+    hover:bg-gray-300/75 transition
+    dark:bg-white/10 dark:hover:bg-white/20"
     >
       <div
         className="pt-4 pb-7 px-5 flex flex-col h-full
@@ -32,14 +33,20 @@ const Project = ({ title, description, tags, imageUrl }: ProjectProps) => {
       sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%]"
       >
         <h3 className="text-2xl font-semibold">{title}</h3>
-        <p className="mt-2 text-gray-700 leading-relaxed">{description}</p>
+        <p
+          className="mt-2 text-gray-700 leading-relaxed
+        dark:text-white/70"
+        >
+          {description}
+        </p>
         <ul
           className="mt-4 flex flex-wrap gap-2 
         sm:mt-auto"
         >
           {tags.map((tag) => (
             <li
-              className="bg-black/70 text-white px-3 py-1 rounded-full text-[0.7rem] uppercase tracking-wider"
+              className="bg-black/70 text-white px-3 py-1 rounded-full text-[0.7rem] uppercase tracking-wider
+              dark:text-white/70"
               key={tag}
             >
               {tag}

@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import ThemeSwitch from "./components/ThemeSwitch";
 import "./globals.css";
+import ThemeSwitchProvider from "@/context/ThemeSwitchContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,13 +27,15 @@ export default function RootLayout({
         sm:pt-36 
         dark:bg-[#111827] dark:text-gray-50 dark:text-opacity-90`}
       >
-        <ActiveSectionProvider>
-          <Background />
-          <Header />
-          {children}
-          <Footer />
-        </ActiveSectionProvider>
-        <ThemeSwitch />
+        <ThemeSwitchProvider>
+          <ActiveSectionProvider>
+            <Background />
+            <Header />
+            {children}
+            <Footer />
+          </ActiveSectionProvider>
+          <ThemeSwitch />
+        </ThemeSwitchProvider>
       </body>
     </html>
   );
