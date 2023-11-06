@@ -54,7 +54,16 @@ export const projectsData = [
     title: "Project Title 1",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. At debitis non sit, dolores sapiente minus dignissimos repellendus excepturi doloribus cum?",
-    tags: ["Tag 1", "Tag 2", "Tag 3"],
+    tags: [
+      "Tag 1",
+      "Tag 2",
+      "Tag 3",
+      "Tag 4",
+      "Tag 5",
+      "Tag 6",
+      "Tag 7",
+      "Tag 8",
+    ],
     imageUrl: building,
   },
   {

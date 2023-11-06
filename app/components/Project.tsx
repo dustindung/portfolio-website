@@ -29,8 +29,8 @@ const Project = ({ title, description, tags, imageUrl }: ProjectProps) => {
     >
       <div
         className="pt-4 pb-7 px-5 flex flex-col h-full
-      group-even:ml-[19rem]
-      sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%]"
+        sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%]
+        sm:group-even:ml-[19rem]"
       >
         <h3 className="text-2xl font-semibold">{title}</h3>
         <p
@@ -59,7 +59,8 @@ const Project = ({ title, description, tags, imageUrl }: ProjectProps) => {
         src={imageUrl}
         alt={title}
         quality={95}
-        className="absolute top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
+        className="hidden absolute top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
+        sm:block
         group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-hover:scale-105 transition
 
         group-even:right-[initial] group-even:-left-40
