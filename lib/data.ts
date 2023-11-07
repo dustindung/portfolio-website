@@ -1,7 +1,11 @@
-import building from "@/public/building.jpg";
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
+import IssueTracker from "@/public/issue-tracker.jpeg";
+import GameHub from "@/public/game-hub.jpeg";
+import NasaProject from "@/public/nasa-project.jpeg";
+import Hostify from "@/public/hostify.jpeg";
+import { experiences1, experiences2, experiences3 } from "./experiences";
 
 export const links = [
   {
@@ -32,60 +36,95 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Title 1",
-    location: "Location 1",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, obcaecati! Nam totam tenetur reiciendis quisquam! Error at distinctio ducimus qui.",
-    icon: React.createElement(LuGraduationCap),
-    date: "Date 1",
+    title: "YOUNET GROUP",
+    location: "Ho Chi Minh",
+    description: React.createElement(experiences3),
+    icon: React.createElement(CgWorkAlt),
+    date: "2021 - 2023",
   },
   {
-    title: "Title 2",
-    location: "Location 2",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, obcaecati! Nam totam tenetur reiciendis quisquam! Error at distinctio ducimus qui.",
+    title: "Internet Marketing",
+    location: "Freelance",
+    description: React.createElement(experiences2),
     icon: React.createElement(CgWorkAlt),
-    date: "Date 2",
+    date: "2017 - 2021",
+  },
+  {
+    title: "Yet Company",
+    location: "Ho Chi Minh",
+    description: React.createElement(experiences1),
+    icon: React.createElement(CgWorkAlt),
+    date: "2016 - 2017",
+  },
+  {
+    title: "Saigon Technology University",
+    location: "Ho Chi Minh",
+    description: "Information Technology",
+    icon: React.createElement(LuGraduationCap),
+    date: "2016",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "Project Title 1",
+    title: "Issue Tracker",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. At debitis non sit, dolores sapiente minus dignissimos repellendus excepturi doloribus cum?",
+      "Issue Tracker is a web application that allows users to create manage and track issues. Users can sort or filter issues by various criteria assign other users to issues and view a dashboard with charts to display the status of issue",
     tags: [
-      "Tag 1",
-      "Tag 2",
-      "Tag 3",
-      "Tag 4",
-      "Tag 5",
-      "Tag 6",
-      "Tag 7",
-      "Tag 8",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Radix UI",
+      "Prisma",
+      "NextAuth.js",
     ],
-    imageUrl: building,
+    imageUrl: IssueTracker,
+    githubUrl: "https://github.com/dustindung/issue-tracker",
+    website: "https://issue-tracker-ten-kohl.vercel.app/",
   },
   {
-    title: "Project Title 2",
+    title: "Game-Hub",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. At debitis non sit, dolores sapiente minus dignissimos repellendus excepturi doloribus cum?",
-    tags: ["Tag 1", "Tag 2", "Tag 3"],
-    imageUrl: building,
+      "Game-hub is a video game discovery app built with Vite, React, TypeScript, Chakra UI and the RAWG API",
+    tags: [
+      "Vite-React",
+      "TypeScript",
+      "Chakra UI",
+      "API Integration",
+      "React Query",
+      "Zustand",
+      "React Router",
+    ],
+    imageUrl: GameHub,
+    githubUrl: "https://github.com/dustindung/Game-hub",
+    website: "https://game-hub-zeta-sand.vercel.app/",
   },
   {
-    title: "Project Title 3",
+    title: "NASA Project",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. At debitis non sit, dolores sapiente minus dignissimos repellendus excepturi doloribus cum?",
-    tags: ["Tag 1", "Tag 2", "Tag 3"],
-    imageUrl: building,
+      "This project is a full-stack JavaScript application that allows users to schedule a mission launch for interstellar travel to one of the Kepler Exoplanets. The application is built with React, NodeJS, Express, MongoDB, Mongoose, REST API, MVC pattern, Morgan, Jest, GitHub Actions, Docker and deployed to AWS.",
+    tags: [
+      "React",
+      "NodeJS",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+      "Morgan",
+      "Jest",
+    ],
+    imageUrl: NasaProject,
+    githubUrl: "https://github.com/dustindung/nasa-project",
+    website:
+      "http://ec2-54-254-247-36.ap-southeast-1.compute.amazonaws.com:8000/",
   },
   {
-    title: "Project Title 4",
+    title: "Hostify",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. At debitis non sit, dolores sapiente minus dignissimos repellendus excepturi doloribus cum?",
-    tags: ["Tag 1", "Tag 2", "Tag 3"],
-    imageUrl: building,
+      "Hostify is a beautiful responsive and fast website for an imaginary cloud hosting provider.",
+    tags: ["HTML", "CSS"],
+    imageUrl: Hostify,
+    githubUrl: "https://github.com/dustindung/Hostify",
+    website: "https://hostify-pearl.vercel.app/",
   },
 ] as const;
 

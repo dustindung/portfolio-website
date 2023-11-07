@@ -114,7 +114,7 @@ const Intro = () => {
           <BsLinkedin />
         </a>
         <a
-          href=""
+          href="https://github.com/dustindung"
           target="_blank"
           className="bg-white text-gray-700 p-4 text-[1.50rem] flex items-center gap-2 rounded-full outline-none border border-black/10 transition
           focus:scale-110 
