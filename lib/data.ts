@@ -36,7 +36,7 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "YOUNET GROUP",
+    title: "Younet Group",
     location: "Ho Chi Minh",
     description: React.createElement(experiences3),
     icon: React.createElement(CgWorkAlt),

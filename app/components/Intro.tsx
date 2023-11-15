@@ -88,7 +88,7 @@ const Intro = () => {
           />
         </Link>
         <a
-          href=""
+          href="./dustin-resume.pdf"
           download
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none border border-black/10 transition
           focus:scale-110 
@@ -102,7 +102,7 @@ const Intro = () => {
           group-hover:translate-y-1"
           />
         </a>
-        <a
+        {/* <a
           href=""
           target="_blank"
           className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full outline-none border border-black/10 transition
@@ -112,7 +112,7 @@ const Intro = () => {
           dark:bg-opacity-10 dark:text-white/60"
         >
           <BsLinkedin />
-        </a>
+        </a> */}
         <a
           href="https://github.com/dustindung"
           target="_blank"
